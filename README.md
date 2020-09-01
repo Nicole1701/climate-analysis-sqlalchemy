@@ -52,12 +52,13 @@ Design a Flask API based on the queries that you have just developed.
 def welcome():
     """List all available api routes."""
     return (
-        f"Available Routes:<br/>"
-        f"<a href='/api/v1.0/billingcountry'>billingcountry</a><br/>"
-        f"<a href='/api/v1.0/countrytotal'>countrytotal</a><br/>"
-        f"<a href='/api/v1.0/postcodes/USA'>postcodes/USA</a><br/>"
-        f"<a href='/api/v1.0/countryitemtotals/USA'>countryitemtotals/USA</a><br/>"
-        f"<a href='/api/v1.0/postcodeitemtotals/USA'>postcodeitemtotals/USA</a><br/>"
+        f"Welcome to my weather API!<br/>"
+        f"Available Routes: <br/><br/>"
+        f"Precipitation amounts by date: /api/v1.0/precipitation<br/>"
+        f"List of stations: /api/v1.0/stations<br/>"
+        f"Temperature Observed (TOBS) for most active station (last year only): /api/v1.0/tobs<br/>"
+        f"Temp Stats by Start Date (YYYY-MM-DD): /api/v1.0/yyyy-mm-dd<br/>"
+        f"Temp Stats by Start/End Date (YYYY-MM-DD): /api/v1.0/yyyy-mm-dd/yyyy-mm-dd<br/>"
     )
 
 ```
