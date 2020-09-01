@@ -47,6 +47,21 @@ Design a Flask API based on the queries that you have just developed.
 
   * List all routes that are available.
 
+  ```
+@app.route("/")
+def welcome():
+    """List all available api routes."""
+    return (
+        f"Available Routes:<br/>"
+        f"<a href='/api/v1.0/billingcountry'>billingcountry</a><br/>"
+        f"<a href='/api/v1.0/countrytotal'>countrytotal</a><br/>"
+        f"<a href='/api/v1.0/postcodes/USA'>postcodes/USA</a><br/>"
+        f"<a href='/api/v1.0/countryitemtotals/USA'>countryitemtotals/USA</a><br/>"
+        f"<a href='/api/v1.0/postcodeitemtotals/USA'>postcodeitemtotals/USA</a><br/>"
+    )
+
+```
+
 * `/api/v1.0/precipitation`
 
   * Convert the query results to a dictionary using `date` as the key and `prcp` as the value.
