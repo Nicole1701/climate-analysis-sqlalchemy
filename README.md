@@ -47,7 +47,7 @@ Design a Flask API based on the queries that you have just developed.
 
   * List all routes that are available.
 
-  ```
+```
 @app.route("/")
 def welcome():
     """List all available api routes."""
